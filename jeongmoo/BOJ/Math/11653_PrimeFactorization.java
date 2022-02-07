@@ -1,29 +1,22 @@
 import java.util.Scanner;
 
-public class boj11653 {
+// 백준 11653번. 소인수분해
+public class BOJ11653_PrimeFactorization {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
 		
-		int div = 2;
-		int max = (int)Math.sqrt(n);
-		
+		int origin = n;
 		StringBuilder sb = new StringBuilder();
-		while (true) {
-			if(max < div)
+		for (int i = 2; i < n; i++) {
+			if (origin < i*i)
 				break;
 			
-			if (n%div == 0) {
-				while(true) {
-					sb.append(div+"\n");
-					n /= div;
-					
-					if (n%div != 0) {
-						break;
-					}
-				}
+			while (n%i==0) {
+				sb.append(i+"\n");
+				n/=i;
 			}
-			div++;
+			
 		}
 		
 		if (n != 1)
