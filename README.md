@@ -1,6 +1,6 @@
 # SSAFY 7th Algorithm Study
 
-## 서울 14반 JAVA 알고리즘 스터디 A조
+## 서울 14반 JAVA 알고리즘 스터디 B조
 
 - 고태희, 김채연, 안호진, 우정무, 이태선, 이희진
 
