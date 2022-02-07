@@ -1,6 +1,6 @@
-package SEA.DataStructure;
+package com;
 
-public class sea1218 {
+public class SW1218 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
