@@ -76,6 +76,8 @@ git commit -m "[BOJ] Hello World / 브론즈5 / 1분" -m "https://www.acmicpc.ne
 hojin/boj/recursion/17478_재귀함수가 뭔가요.java
 ```
 
+- java는 소스만 복사해서 폴더 안에 .java 파일에 삽입
+
 ---
 
 <br />
