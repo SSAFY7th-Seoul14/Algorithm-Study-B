@@ -67,4 +67,4 @@ public class SWEA1218_MatchBracket {
 			System.out.printf("#%d %d\n", i+1, result);
 		}
 	}
-}
+} 
