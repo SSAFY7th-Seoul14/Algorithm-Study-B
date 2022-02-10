@@ -9,6 +9,7 @@ public class Main {
 		int n = scan.nextInt();
 		int count = 0;
 		String temp;
+		
 		for (int i = 666; i < 50000000; i++)
 		{
 			temp = Integer.toString(i);
