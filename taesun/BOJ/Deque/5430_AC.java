@@ -23,6 +23,7 @@ public class Main {
 		for (int t = 1; t<= test; t++)
 		{
 			int temp = 0;
+			
 			boolean flag = true;  
 			String s1 = br.readLine();
 			int n = Integer.parseInt(br.readLine());
