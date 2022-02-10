@@ -48,6 +48,7 @@ public class Main {
 				if (q.get(j) == target)
 					locate = j;
 			}
+			
 			if (locate <= q.size() / 2)
 			{
 				while (q.getFirst() != target)
