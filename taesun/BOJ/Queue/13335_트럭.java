@@ -38,6 +38,7 @@ public class Main {
 			if (pass == n)
 				break;
 		}
+		
 		System.out.println(ans);
 	}
 }
