@@ -42,6 +42,7 @@ public class Main {
 				break;
 			}
 		}
+		
 		if (flag)
 			System.out.println(v);
 		else
