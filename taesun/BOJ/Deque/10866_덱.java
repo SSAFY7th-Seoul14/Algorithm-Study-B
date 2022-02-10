@@ -13,7 +13,6 @@ public class Main {
 		 
 		ArrayDeque<Integer> dq = new ArrayDeque<Integer>();
 		StringBuilder sb = new StringBuilder();
- 
 		int n = Integer.parseInt(br.readLine());
 		int temp;
 		for (int i=0; i<n; i++)
