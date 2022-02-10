@@ -22,6 +22,7 @@ public class Main {
 			return;
 		}
 	}
+	
 	static void inorder(node node)
 	{
 		if (node != null)
