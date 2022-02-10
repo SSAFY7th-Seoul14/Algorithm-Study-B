@@ -15,8 +15,9 @@
 - 매주 **월, 화, 목 20시~22시 웹엑스로 진행**, 그 외에는 자율적으로 모각코
 - **평일 모각코는 20-21:30**
 - **주말은 시간 구애 없는 자율적으로 문제 풀기**
-  - **주말간** 돌아오는 주에 맞는 주제의 문제를 **1~2개씩** 선정해오기
-  - 팀원들이 선택한 1~2문제를 모아서 주중에 풀기
+  - **주말간** ~~돌아오는 주에 맞는 주제의~~ 문제를 **1~2개씩** 선정해오기(가져오는 유형 범위는 누적 -> 복습 차원)
+  - 팀원들이 골라온 문제들을 주중에 최대한 풀기 🤙
+  - [백준 그룹](https://www.acmicpc.net/group/13731) 문제집으로 발행, 실시간으로 체크 가능
 
 <br />
 
@@ -29,17 +30,14 @@
   
   [발행 이슈](https://github.com/SSAFY7th-Seoul14/Algorithm-Study-B/issues/7)
 
-| 문제출처 | 문제번호                                                                                              | 문제이름    | 문제유형 | 난이도 |
-| -------- | ----------------------------------------------------------------------------------------------------- | ----------- | -------- | ------ |
-| SEA      | [1218](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV14eWb6AAkCFAYD) | 괄호 짝짓기 | Stack    | D4     |
-| BOJ      | [1966](https://www.acmicpc.net/problem/1966) | 프린터큐 | Queue    | s3     |
-| BOJ      | [13335](https://www.acmicpc.net/problem/13335) | 트럭 | Queue    | s1     |
-| BOJ      | [5430](https://www.acmicpc.net/problem/5430) | AC | Deque    | g5     |
-| BOJ      | [1406](https://www.acmicpc.net/problem/1406) |  에디터 | Stack | s3    | 
-| BOJ      | [1021](https://www.acmicpc.net/problem/1021)  | 회전하는 큐 | Queue | s4 |
-| BOJ      | [1991](https://www.acmicpc.net/problem/1991)  | 트리 순회 | Tree | s1 |
-  
-  
+| 문제출처 | 문제번호                                       | 문제이름    | 문제유형 | 난이도 |
+| -------- | ---------------------------------------------- | ----------- | -------- | ------ |
+| BOJ      | [1966](https://www.acmicpc.net/problem/1966)   | 프린터큐    | Queue    | s3     |
+| BOJ      | [13335](https://www.acmicpc.net/problem/13335) | 트럭        | Queue    | s1     |
+| BOJ      | [5430](https://www.acmicpc.net/problem/5430)   | AC          | Deque    | g5     |
+| BOJ      | [1406](https://www.acmicpc.net/problem/1406)   | 에디터      | Stack    | s3     |
+| BOJ      | [1021](https://www.acmicpc.net/problem/1021)   | 회전하는 큐 | Queue    | s4     |
+| BOJ      | [1991](https://www.acmicpc.net/problem/1991)   | 트리 순회   | Tree     | s1     |
 
 </details>
 <details>
@@ -102,7 +100,35 @@ git commit -m "[BOJ] Hello World / 브론즈5 / 1분" -m "https://www.acmicpc.ne
 안호진 / 2월 2주차 / 4문제
 ```
 
-- comment는 자유이나 가능하다면, 이번주에 풀었던 문제의 알고리즘 분류가 어떻게 되는지, <br> 어떤 문제가 어려웠는지 회고를 작성한다면 개인에게도 도움되고 다른 사람이 참고하기 좋을 것 같습니다 :)
+- PR comment 양식 :
+  - makrdown `Raw Version` 이대로 적어주시면 됩니다.
+  - comment 작성시 # 넣으면 연결할 수 있는 issue, pr등을 보여줍니다. 이때 해당 주차 issue 잘 선택하시면 연결 됩니다.
+  - 체크 박스 만들기는 드래그 후에 comment에 있는 checkbox 만들기로 만들기
+  - 문제 링크, 커밋 링크는 해당 텍스트 드래그하셔서 붙여넣기하면 자동으로 텍스트와 링크가 적힙니다.
+
+`View Version`
+
+![image](https://user-images.githubusercontent.com/47904304/153404989-98a8e48f-a106-4885-946f-a38bbd160768.png)
+
+`Raw Version`
+
+```
+## 🔗 linked issue #7
+
+✔️ 완료 여부 check하기
+
+- [x] [A - 프린터 큐](https://www.acmicpc.net/problem/1966)
+- [x] [B - 트럭](https://www.acmicpc.net/problem/13335)
+- [ ] [C - AC](https://www.acmicpc.net/problem/5430)
+- [ ] [D - 에디터](https://www.acmicpc.net/problem/1406)
+- [ ] [E - 회전하는 큐](https://www.acmicpc.net/problem/1021)
+- [ ] [F - 트리 순회](https://www.acmicpc.net/problem/1991)
+
+## 🚨 질문&리뷰 요청
+[`[BOJ] 트럭 / 실버 1 / 2시간+`](https://github.com/SSAFY7th-Seoul14/Algorithm-Study-B/pull/6/commits/31cd76f9470801521fefd30eaf4e172bd20ae4d7) - 질문은 아니고 일단 예시입니다.
+```
+
+- 댓글로 이번주에 풀었던 문제의 알고리즘 분류가 어떻게 되는지, <br> 어떤 문제가 어려웠는지 회고를 작성한다면 개인에게도 도움되고 다른 사람이 참고하기 좋을 것 같습니다 :)
 - PR comment의 기준은 Issue 발행 문제랑 질문하고 싶은 문제
 - PR Merge 후에는 Delete Branch(origin/name 삭제해도 local에 있기 때문에 무방)
 
@@ -131,17 +157,18 @@ hojin/boj/recursion/17478_재귀함수가 뭔가요.java
 
 ---
 
-## 📌 기타 정보  
+## 📌 기타 정보
 
 - java는 소스만 복사해서 폴더 안에 .java 파일에 삽입
 - BOJ 난이도 `b : bronze / s : silver / g : gold / p : platinum / d : diamond / r : ruby`
 - 개인이 날린 PR은 본인이 merge하지 않고 reviewer가 검토 하고 merge하기  
-(리뷰 코멘트 남기면 좋음 ex. `O(N*long N)의 시간 복잡도로 줄일 수 있지 않을까요?`)
+  (리뷰 코멘트 남기면 좋음 ex. `O(N*long N)의 시간 복잡도로 줄일 수 있지 않을까요?`)
 - 백준 기준 실버 3 이상의 문제 골라오기
+- 백준 티어 보는 법 -> [백준 온라인 저지(BOJ)에서 문제 난이도 보는 방법 (+ solved.ac)](https://ndb796.tistory.com/466)
+- 입출력 시간 차이 정리 -> [출력 속도 비교 [출처]: 백준](https://www.acmicpc.net/blog/view/57)
 
 ---
 
 ## 📌 참고 링크
 
 - [💯 알고리즘 및 코딩 테스트 문제 풀이 챌린지 100 📝](https://github.com/ellynhan/challenge100-codingtest-study)
-- 백준 티어 보는 법 -> [백준 온라인 저지(BOJ)에서 문제 난이도 보는 방법 (+ solved.ac)](https://ndb796.tistory.com/466)
