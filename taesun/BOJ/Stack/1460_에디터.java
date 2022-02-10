@@ -8,6 +8,7 @@ public class Main {
 	static Stack<Character> right = new Stack<Character>();
 	
 	// 스택을 2개 쓰는게 가장 편한 방법
+	
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String s = br.readLine();
