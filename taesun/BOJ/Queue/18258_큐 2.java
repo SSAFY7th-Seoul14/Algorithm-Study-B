@@ -22,6 +22,7 @@ public class Main {
 				temp = Integer.parseInt(s[1]);
 				q.add(temp);
 			}
+			
 			else if (s[0].equals("pop"))
 			{
 				if (q.isEmpty())
