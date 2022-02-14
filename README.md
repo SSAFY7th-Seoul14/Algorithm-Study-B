@@ -47,16 +47,17 @@
   
   [발행 이슈](https://github.com/SSAFY7th-Seoul14/Algorithm-Study-B/issues/11)
 
-| 문제출처 | 문제번호 이름      | 문제유형    | 난이도 |
-| -------- | ----------------- | ----------- | -------- |
-| BOJ | [1182 부분수열의 합](https://www.acmicpc.net/problem/1182) | 백트래킹 | S2 |
-|BOJ| [14502 연구소](https://www.acmicpc.net/problem/14502) | BFS | G5 |
-|BOJ| [14889 스타트와 링크](https://www.acmicpc.net/problem/14889) | 백트래킹 | S2 |
-|BOJ | [1931 회의실 배정](https://www.acmicpc.net/problem/1931) | 그리디 | S2 |
-|BOJ| [1992 쿼드트리](https://www.acmicpc.net/problem/1992) | 분할 정복 | S1 |
-|BOJ| [17298 오큰수](https://www.acmicpc.net/problem/17298) | 스택 | G4 |
-|BOJ| [9663 N-QUEEN](https://www.acmicpc.net/problem/9663) | 브루트포스 | G5 |
-|BOJ| [11723 집합](https://www.acmicpc.net/problem/11723) | 비트마스킹 | S5 |
+  | 문제출처 | 문제번호 이름      | 문제유형    | 난이도 |
+  | -------- | ----------------- | ----------- | -------- |
+  | BOJ | [1182 부분수열의 합](https://www.acmicpc.net/problem/1182) | 백트래킹 | S2 |
+  |BOJ| [14502 연구소](https://www.acmicpc.net/problem/14502) | BFS | G5 |
+  |BOJ| [14889 스타트와 링크](https://www.acmicpc.net/problem/14889) | 백트래킹 | S2 |
+  |BOJ | [1931 회의실 배정](https://www.acmicpc.net/problem/1931) | 그리디 | S2 |
+  |BOJ| [1992 쿼드트리](https://www.acmicpc.net/problem/1992) | 분할 정복 | S1 |
+  |BOJ| [17298 오큰수](https://www.acmicpc.net/problem/17298) | 스택 | G4 |
+  |BOJ| [9663 N-QUEEN](https://www.acmicpc.net/problem/9663) | 브루트포스 | G5 |
+  |BOJ| [11723 집합](https://www.acmicpc.net/problem/11723) | 비트마스킹 | S5 |
+  |PGS| [타겟 넘버](https://programmers.co.kr/learn/courses/30/lessons/43165) | BFS/DFS | lv2|
 
   
 </details>
