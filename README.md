@@ -132,6 +132,23 @@ git commit -m "[BOJ] Hello World / 브론즈5 / 1분" -m "https://www.acmicpc.ne
 - PR comment의 기준은 Issue 발행 문제랑 질문하고 싶은 문제
 - PR Merge 후에는 Delete Branch(origin/name 삭제해도 local에 있기 때문에 무방)
 
+
+
+`🚨 PR 생성이 안보여요!`  
+1. 본인 repo 상단 메뉴에서 Pull requests로 들어가셔서
+
+  ![image](https://user-images.githubusercontent.com/47904304/153858403-f285c43b-8662-4eef-85b3-ec7731126e12.png)
+
+2. `New Pull Request` 선택 후
+
+  ![image](https://user-images.githubusercontent.com/47904304/153858708-b12b94b0-2eaf-4074-87d5-a7d8e21bfa6e.png)
+
+3. head repository가 되는 본인의 repo에서 ~~main branch~~가 아닌 개인 이름 branch로 Pull Request를 생성해주시면 됩니다
+
+  ![image](https://user-images.githubusercontent.com/47904304/153859313-c40518d3-33b4-40e3-8b7f-8eafd5ac6122.png)
+
+
+
 ### ✅ Issue 양식
 
 - Issue 제목: `n월 n주차 스터디 ✏️`
