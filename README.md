@@ -15,7 +15,59 @@
 - 매주 **월, 화, 목 20시~22시 웹엑스로 진행**, 그 외에는 자율적으로 모각코
 - **평일 모각코는 20-21:30**
 - **주말은 시간 구애 없는 자율적으로 문제 풀기**
-  - 금요일까지 팀원들이 **선택한 1~2문제**를 모아서 주말에 각자 풀기
+  - **주말간** ~~돌아오는 주에 맞는 주제의~~ 문제를 **1~2개씩** 선정해오기(가져오는 유형 범위는 누적 -> 복습 차원)
+  - 팀원들이 골라온 문제들을 주중에 최대한 풀기 🤙
+  - [백준 그룹](https://www.acmicpc.net/group/13731) 문제집으로 발행, 실시간으로 체크 가능
+
+<br />
+
+### ⏱ 함께 한 문제 Timetable
+
+<details>
+  <summary>
+1주차: 2022-02-07 ~ 2022-02-13 Stack, Queue, Linked List, Tree  
+  </summary>
+  
+  [발행 이슈](https://github.com/SSAFY7th-Seoul14/Algorithm-Study-B/issues/7)
+
+  | 문제출처 | 문제번호                                       | 문제이름    | 문제유형 | 난이도 |
+  | -------- | ---------------------------------------------- | ----------- | -------- | ------ |
+  | BOJ      | [1966](https://www.acmicpc.net/problem/1966)   | 프린터큐    | Queue    | s3     |
+  | BOJ      | [13335](https://www.acmicpc.net/problem/13335) | 트럭        | Queue    | s1     |
+  | BOJ      | [5430](https://www.acmicpc.net/problem/5430)   | AC          | Deque    | g5     |
+  | BOJ      | [1406](https://www.acmicpc.net/problem/1406)   | 에디터      | Stack    | s3     |
+  | BOJ      | [1021](https://www.acmicpc.net/problem/1021)   | 회전하는 큐 | Queue    | s4     |
+  | BOJ      | [1991](https://www.acmicpc.net/problem/1991)   | 트리 순회   | Tree     | s1     |
+
+</details>
+<details>
+  <summary>
+2주차: 2022-02-14 ~ 2022-02-20 완전탐색, 탐욕알고리즘, 분할정복, 백트래킹, 그래프  
+  </summary>
+  
+  [발행 이슈](https://github.com/SSAFY7th-Seoul14/Algorithm-Study-B/issues/11)
+
+  | 문제출처 | 문제번호 이름      | 문제유형    | 난이도 |
+  | -------- | ----------------- | ----------- | -------- |
+  | BOJ | [1182 부분수열의 합](https://www.acmicpc.net/problem/1182) | 백트래킹 | S2 |
+  |BOJ| [14502 연구소](https://www.acmicpc.net/problem/14502) | BFS | G5 |
+  |BOJ| [14889 스타트와 링크](https://www.acmicpc.net/problem/14889) | 백트래킹 | S2 |
+  |BOJ | [1931 회의실 배정](https://www.acmicpc.net/problem/1931) | 그리디 | S2 |
+  |BOJ| [1992 쿼드트리](https://www.acmicpc.net/problem/1992) | 분할 정복 | S1 |
+  |BOJ| [17298 오큰수](https://www.acmicpc.net/problem/17298) | 스택 | G4 |
+  |BOJ| [9663 N-QUEEN](https://www.acmicpc.net/problem/9663) | 브루트포스 | G5 |
+  |BOJ| [11723 집합](https://www.acmicpc.net/problem/11723) | 비트마스킹 | S5 |
+  |PGS| [타겟 넘버](https://programmers.co.kr/learn/courses/30/lessons/43165) | BFS/DFS | lv2|
+
+  
+</details>
+<details>
+  <summary>
+3주차: 2022-02-21 ~ 2022-02-27 그래프, 문자열
+  </summary>  
+</details>
+
+<br />
 
 ---
 
@@ -40,7 +92,7 @@
 
 ### ✅ commit 규칙
 
-- commit 메세지: [문제 출처(플랫폼)] 문제이름 / 난이도 / 걸린시간
+- commit 메세지: `[문제 출처(플랫폼)] 문제이름 / 난이도 / 걸린시간`
 - description: 문제 주소 (option)
 - 터미널에서 작성법:
 
@@ -58,13 +110,74 @@ git commit -m "[BOJ] Hello World / 브론즈5 / 1분" -m "https://www.acmicpc.ne
 
 ### ✅ PR 규칙
 
-- PR 제목: 이름 / 주차 / 몇 문제
+- PR 제목: `이름 / 주차 / 몇 문제`
 
 ```
 안호진 / 2월 2주차 / 4문제
 ```
 
-- comment는 자유이나 가능하다면, 이번주에 풀었던 문제의 알고리즘 분류가 어떻게 되는지, <br> 어떤 문제가 어려웠는지 회고를 작성한다면 개인에게도 도움되고 다른 사람이 참고하기 좋을 것 같습니다 :)
+- PR comment 양식 :
+  - makrdown `Raw Version` 이대로 적어주시면 됩니다.
+  - comment 작성시 # 넣으면 연결할 수 있는 issue, pr등을 보여줍니다. 이때 해당 주차 issue 잘 선택하시면 연결 됩니다.
+  - 체크 박스 만들기는 드래그 후에 comment에 있는 checkbox 만들기로 만들기
+  - 문제 링크, 커밋 링크는 해당 텍스트 드래그하셔서 붙여넣기하면 자동으로 텍스트와 링크가 적힙니다.
+
+`View Version`
+
+![image](https://user-images.githubusercontent.com/47904304/153404989-98a8e48f-a106-4885-946f-a38bbd160768.png)
+
+`Raw Version`
+
+```
+## 🔗 linked issue #7
+
+✔️ 완료 여부 check하기
+
+- [x] [A - 프린터 큐](https://www.acmicpc.net/problem/1966)
+- [x] [B - 트럭](https://www.acmicpc.net/problem/13335)
+- [ ] [C - AC](https://www.acmicpc.net/problem/5430)
+- [ ] [D - 에디터](https://www.acmicpc.net/problem/1406)
+- [ ] [E - 회전하는 큐](https://www.acmicpc.net/problem/1021)
+- [ ] [F - 트리 순회](https://www.acmicpc.net/problem/1991)
+
+## 🚨 질문&리뷰 요청
+[`[BOJ] 트럭 / 실버 1 / 2시간+`](https://github.com/SSAFY7th-Seoul14/Algorithm-Study-B/pull/6/commits/31cd76f9470801521fefd30eaf4e172bd20ae4d7) - 질문은 아니고 일단 예시입니다.
+```
+
+- 댓글로 이번주에 풀었던 문제의 알고리즘 분류가 어떻게 되는지, <br> 어떤 문제가 어려웠는지 회고를 작성한다면 개인에게도 도움되고 다른 사람이 참고하기 좋을 것 같습니다 :)
+- PR comment의 기준은 Issue 발행 문제랑 질문하고 싶은 문제
+- PR Merge 후에는 Delete Branch(origin/name 삭제해도 local에 있기 때문에 무방)
+
+
+
+`🚨 PR 생성이 안보여요!`  
+1. 본인 repo 상단 메뉴에서 Pull requests로 들어가셔서
+
+  ![image](https://user-images.githubusercontent.com/47904304/153858403-f285c43b-8662-4eef-85b3-ec7731126e12.png)
+
+2. `New Pull Request` 선택 후
+
+  ![image](https://user-images.githubusercontent.com/47904304/153858708-b12b94b0-2eaf-4074-87d5-a7d8e21bfa6e.png)
+
+3. head repository가 되는 본인의 repo에서 ~~main branch~~가 아닌 개인 이름 branch로 Pull Request를 생성해주시면 됩니다
+
+  ![image](https://user-images.githubusercontent.com/47904304/153859313-c40518d3-33b4-40e3-8b7f-8eafd5ac6122.png)
+
+<br />
+
+### ✅ Issue 양식
+
+- Issue 제목: `n월 n주차 스터디 ✏️`
+
+
+\#\# 🏷️ 학습 주제  
+댓글로 문제를 달아주세요  
+댓글 양식 : `[출처] 번호 이름 / 유형 / 난이도 / 링크`  
+\`\`\`  
+[BOJ] 1991 트리 순회 / 트리 / s1 /https://www.acmicpc.net/problem/1991  
+\`\`\`  
+본인 문제 유형에 해당하는 label을 직접 설정해주세요!  
+n월 n주차 주제 :  
 
 <br />
 
@@ -78,36 +191,18 @@ hojin/boj/recursion/17478_재귀함수가 뭔가요.java
 
 ---
 
-<br />
+## 📌 기타 정보
 
-## ⏱ Timetable
-
-<details>
-  <summary>
-1주차: 2022-02-07 ~ 2022-02-13 Stack, Queue, Linked List, Tree  
-  </summary>
-
-|         | 내용    | 설명    |
-| ------- | ------- | ------- |
-| 테스트1 | 테스트2 | 테스트3 |
-
-</details>
-<details>
-  <summary>
-2주차: 2022-02-14 ~ 2022-02-20 완전탐색, 탐욕알고리즘, 분할정복, 백트래킹, 그래프  
-  </summary>  
-</details>
-<details>
-  <summary>
-3주차: 2022-02-21 ~ 2022-02-27 그래프, 문자열
-  </summary>  
-</details>
-
-<br />
+- java는 소스만 복사해서 폴더 안에 .java 파일에 삽입
+- BOJ 난이도 `b : bronze / s : silver / g : gold / p : platinum / d : diamond / r : ruby`
+- 개인이 날린 PR은 본인이 merge하지 않고 reviewer가 검토 하고 merge하기  
+  (리뷰 코멘트 남기면 좋음 ex. `O(N*long N)의 시간 복잡도로 줄일 수 있지 않을까요?`)
+- 백준 기준 실버 3 이상의 문제 골라오기
+- 백준 티어 보는 법 -> [백준 온라인 저지(BOJ)에서 문제 난이도 보는 방법 (+ solved.ac)](https://ndb796.tistory.com/466)
+- 입출력 시간 차이 정리 -> [출력 속도 비교 [출처]: 백준](https://www.acmicpc.net/blog/view/57)
 
 ---
 
 ## 📌 참고 링크
 
 - [💯 알고리즘 및 코딩 테스트 문제 풀이 챌린지 100 📝](https://github.com/ellynhan/challenge100-codingtest-study)
-- 백준 티어 보는 법 -> [백준 온라인 저지(BOJ)에서 문제 난이도 보는 방법 (+ solved.ac)](https://ndb796.tistory.com/466)
