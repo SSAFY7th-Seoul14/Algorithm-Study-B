@@ -44,6 +44,7 @@ public class Main {
 				ans[i] = -1;
 			}
 		}
+		
 		for (int i=0; i<n; i++)
 			st.append(ans[i]).append(" ");
 		System.out.println(st);
