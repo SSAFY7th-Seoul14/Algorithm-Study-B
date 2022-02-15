@@ -33,6 +33,7 @@ public class Main {
 				arr[idx + 1] = -1;
 		}
 	}
+	
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		Scanner scan = new Scanner(System.in);
 		n = scan.nextInt();
