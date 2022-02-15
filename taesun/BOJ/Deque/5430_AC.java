@@ -42,6 +42,7 @@ public class Main {
 				else if (s1.charAt(i) == 'D')
 				    temp = d(flag);
 			}
+			
 			if (temp == -1)
 				System.out.println("error");
 			else
