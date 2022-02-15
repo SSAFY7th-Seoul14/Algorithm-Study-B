@@ -31,6 +31,7 @@ public class Main {
 			a = Integer.parseInt(s[1]);
 			list.add(new pair(a,b));
 		}
+		
 		Collections.sort(list);
 		// 끝나는 시간이 빠른 순으로 우선적으로 채우면서 진행 
 		for (int i=0; i<list.size(); i++)
