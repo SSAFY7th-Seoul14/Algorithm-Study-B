@@ -28,6 +28,7 @@ public class Main {
 		m = Integer.parseInt(br.readLine());
 		StringBuilder st = new StringBuilder();
 		int t;
+		
 		for (int i=0; i<m; i++)
 		{
 			String s[] = br.readLine().split(" ");
