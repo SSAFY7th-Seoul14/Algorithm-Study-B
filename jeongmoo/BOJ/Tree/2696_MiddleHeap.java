@@ -4,7 +4,7 @@ import java.util.Collections;
 import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 
-// 백준 1655번. 중앙값 구하기
+// 백준 2696번. 중앙값 구하기
 public class BOJ2696_MiddleHeap {	
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));		
