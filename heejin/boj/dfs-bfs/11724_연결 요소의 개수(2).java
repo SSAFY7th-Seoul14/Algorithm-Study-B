@@ -3,12 +3,10 @@ package com.ssafy.study;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 import java.util.StringTokenizer;
 
-//BOJ / 연결 요소의 개수 / S2 / 40분
+//BOJ / 연결 요소의 개수 / S2 / 10분
 // https://www.acmicpc.net/problem/11724
 public class Main_11724 {
 	static List<ArrayList<Integer>> graph;
