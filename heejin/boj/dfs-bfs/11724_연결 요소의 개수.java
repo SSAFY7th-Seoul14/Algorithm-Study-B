@@ -2,15 +2,16 @@ package com.ssafy.study;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.StringTokenizer;
 
-//BOJ / 연결 요소의 개수 / S2 / 10분 / DFS
+//BOJ / 연결 요소의 개수 / S2 / 10분
 // https://www.acmicpc.net/problem/11724
-public class Main_11724_dfs {
-	static int[] parent;
+public class Main_11724 {
+	static List<ArrayList<Integer>> graph;
+	static boolean[] visited;
+	static int res; // 연결 요소 개수
 	
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -18,43 +19,43 @@ public class Main_11724_dfs {
 		int N= Integer.parseInt(st.nextToken());
 		int M = Integer.parseInt(st.nextToken());
 		
-		//노드의 개수 만큼 부모 테이블 초기화
-		parent = new int[N+1];
+		graph = new ArrayList<ArrayList<Integer>>();
+		visited = new boolean[N+1];
 		
-		//부모 테이블을 자기 자신으로 초기화
-		for(int i=1;i<N+1;i++) 
-			parent[i]=i;
+		//그래프 초기화
+		for(int i=0;i<N+1;i++)
+			graph.add(new ArrayList<Integer>());
 		
-		// union 연산 진행
+		// Graph 간선 형성
 		for(int i=0;i<M;i++) {
 			st = new StringTokenizer(br.readLine());
 			int a = Integer.parseInt(st.nextToken());
 			int b = Integer.parseInt(st.nextToken());
-			union(a,b);
+			graph.get(a).add(b);
+			graph.get(b).add(a);
 		}
 		
-		// 연결요소 개수 세기 - 집합 사용(중복x)
-		Set<Integer> connect = new HashSet<>();
 		for(int i=1;i<N+1;i++) {
-			connect.add(find(parent[i]));
+			if(!visited[i]) {
+				dfs(i);
+				res++; //연결요소 +1
+			}	
 		}
-		System.out.println(connect.size());
+		System.out.println(res);
 	}
-	// 두 원소가 속한 집합 합치기
-	private static void union(int a, int b) {
-		a = find(a);
-		b = find(b);
-		if(a<b)
-			parent[b]=a;
-		else
-			parent[a]=b;
+
+	private static void dfs(int x) {
+		
+		visited[x]=true;
+		for(int i=0;i<graph.get(x).size();i++) {
+			int cur = graph.get(x).get(i);
+			if(!visited[cur]) {
+				dfs(cur);
+			}
+				
+		}
 		
 	}
-	//특정 원소가 속한 집합 찾기
-	private static int find(int x) {
-		if(parent[x]!=x) //루트 노드가 아니면, 루트노드 찾을 때까지 재귀호출
-			parent[x]=find(parent[x]);
-		return parent[x];
-	}
+	
 
 }
