@@ -25,6 +25,7 @@ public class Main {
 				c = input[1].charAt(0);
 				left.add(c);
 			}
+			
 			else if (input[0].equals("D"))
 			{
 				if (right.empty())
