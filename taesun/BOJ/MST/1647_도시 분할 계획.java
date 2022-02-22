@@ -14,7 +14,6 @@ class pair implements Comparable<pair>{
 		return this.z - o.z;
 	}
 }
-
 // 마을을 2개로 나눈다 -> 최소 스패닝 트리에서 간선 하나를 지우면??
 // 가장 긴 간선을 지운다면 최소한으로 2개의 스패닝 트리가 생길 것이다.
 public class Main {
