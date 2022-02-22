@@ -23,7 +23,6 @@ public class Main {
 				temp = scan.nextInt();
 				list.addLast(temp);
 			}
-			
 			while (m >= 0)
 			{
 				target = list.getFirst();

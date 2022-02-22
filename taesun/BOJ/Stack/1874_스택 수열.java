@@ -29,6 +29,7 @@ public class Main {
 				index++;
 				continue;
 			}
+			
 			else if (s.empty()||(arr[index] > s.peek() && index <= n))
 			{
 				s.push(i);

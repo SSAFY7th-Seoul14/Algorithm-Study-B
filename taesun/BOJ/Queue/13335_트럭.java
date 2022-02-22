@@ -18,6 +18,7 @@ public class Main {
 		for (int i=0; i<w; i++)
 			q.add(0);
 		int idx = 0;
+		
 		while(true)
 		{
 			curr -= q.getFirst();

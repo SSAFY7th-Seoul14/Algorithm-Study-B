@@ -19,7 +19,6 @@ public class Main {
 				k= k % arr[i];
 			}
 		}
-		
 		System.out.println(ans);
 	}
 }

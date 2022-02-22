@@ -48,6 +48,7 @@ public class Main {
 					q.removeLast();
 				}
 			}
+			
 			else if (s[0].equals("size"))
 				System.out.println(q.size());
 			else if (s[0].equals("empty"))
