@@ -65,6 +65,22 @@
   <summary>
 3주차: 2022-02-21 ~ 2022-02-27 그래프, 문자열
   </summary>  
+  
+  [발행 이슈](https://github.com/SSAFY7th-Seoul14/Algorithm-Study-B/issues/21)
+
+  | 문제출처 | 문제번호 이름      | 문제유형    | 난이도 |
+  | -------- | ----------------- | ----------- | -------- |
+  |BOJ| [11724 연결 요소의 개수](https://www.acmicpc.net/problem/11724) | 그래프 | s2 |
+  |BOJ| [1647 도시 분할 계획](https://www.acmicpc.net/problem/1647) | 최소 스패닝 트리 | G4 |
+  |BOJ| [16234 인구 이동](https://www.acmicpc.net/problem/16234) | 그래프 | G5 |
+  |BOJ| [7576 토마토](https://www.acmicpc.net/problem/7576) | 그래프 | G5 | 
+  |BOJ| [4963 섬의 개수](https://www.acmicpc.net/problem/4963) | 그래프 | S2 |
+  |BOJ| [9372 상근이의 여행](https://www.acmicpc.net/problem/9372) | 최소신장트리 | S3 |
+  |BOJ| [14888 연산자 끼워넣기](https://www.acmicpc.net/problem/14888) | 백트래킹 | S1 |
+  |BOJ| [2206 벽 부수고 이동하기](https://www.acmicpc.net/problem/2206) | 그래프 | G4 
+  |BOJ| [1238 파티](https://www.acmicpc.net/problem/1238) | 다익스트라 | G3 |
+  |BOJ| [6497 전력난](https://www.acmicpc.net/problem/6497) | 최소 신장 트리 | G4 |
+  
 </details>
 
 <br />
