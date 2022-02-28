@@ -188,9 +188,9 @@ git commit -m "[BOJ] Hello World / 브론즈5 / 1분" -m "https://www.acmicpc.ne
 
 \#\# 🏷️ 학습 주제  
 댓글로 문제를 달아주세요  
-댓글 양식 : `[출처] 번호 이름 / 유형 / 난이도 / 링크`  
+댓글 양식 : \`|출처| 번호 이름 | 링크 | 유형 | 난이도 |\`  
 \`\`\`  
-[BOJ] 1991 트리 순회 / 트리 / s1 /https://www.acmicpc.net/problem/1991  
+|BOJ| 1991 트리 순회 | https://www.acmicpc.net/problem/1991 | 트리 | S1 |  
 \`\`\`  
 본인 문제 유형에 해당하는 label을 직접 설정해주세요!  
 n월 n주차 주제 :  
