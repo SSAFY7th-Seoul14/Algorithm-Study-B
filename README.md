@@ -80,6 +80,19 @@
   |BOJ| [2206 벽 부수고 이동하기](https://www.acmicpc.net/problem/2206) | 그래프 | G4 
   |BOJ| [1238 파티](https://www.acmicpc.net/problem/1238) | 다익스트라 | G3 |
   |BOJ| [6497 전력난](https://www.acmicpc.net/problem/6497) | 최소 신장 트리 | G4 |
+  |PGS| [섬 연결하기](https://programmers.co.kr/learn/courses/30/lessons/42861) | 그리디 | lv3 |
+  
+</details>
+<details>
+  <summary>
+4주차: 2022-02-28 ~ 2022-03-06 자율
+  </summary>  
+  
+  [발행 이슈](https://github.com/SSAFY7th-Seoul14/Algorithm-Study-B/issues/28)
+
+  | 문제출처 | 문제번호 이름      | 문제유형    | 난이도 |
+  | -------- | ----------------- | ----------- | -------- |
+  
   
 </details>
 
