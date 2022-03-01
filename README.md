@@ -92,7 +92,13 @@
 
   | 문제출처 | 문제번호 이름      | 문제유형    | 난이도 |
   | -------- | ----------------- | ----------- | -------- |
-  
+  |BOJ| [1916 최소비용 구하기](https://www.acmicpc.net/problem/1916) | 다익스트라 | G5 |
+  |BOJ| [14503 로봇 청소기](https://www.acmicpc.net/problem/14503) | 구현 | G5 |
+  |BOJ| [2110 공유기 설치](https://www.acmicpc.net/problem/2110) | 이분 탐색 | G5
+  |BOJ| [10026 적록색약](https://www.acmicpc.net/problem/10026) | 그래프 | G5
+  |BOJ| [15683 감시](https://www.acmicpc.net/problem/15683) | 구현 | G5 |
+  |BOJ| [9466 텀 프로젝트](https://www.acmicpc.net/problem/9466) | DFS | G3
+  |BOJ| [2156 포도주 시식](https://www.acmicpc.net/problem/2156) | DP | S1
   
 </details>
 
