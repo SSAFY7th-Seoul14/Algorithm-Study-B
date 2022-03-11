@@ -1,11 +1,10 @@
 import java.util.Scanner;
 
 // 백준20500번. Ezreal 여눈부터 가네 ㅈㅈ
-// 1시 20분
 public class BOJ20500_Ezreal {	
 	// 순열로 풀면 무조건 시간초과
 	// 15의 배수. 3의 배수 + 5의 배수.
-	// 5의배수: 끝자리가 0이어야 함.
+	// 5의배수: 끝자리가 5나 0이어야 함.
 	// 3의배수: 각 자리 수의 합이 3의배수 여야함.
 	public static void main(String[] args) throws Exception {
 		Scanner sc = new Scanner(System.in);
@@ -13,7 +12,7 @@ public class BOJ20500_Ezreal {
 		
 		long dp[][] = new long[n][3];
 		
-		// 끝자리수가 1인 경우는 제외한다.
+		// 끝자리수가 1인 경우는 제외한다. (5의 배수여야 하므로)
 		// 한자리수면 5밖에 없으므로 3으로 나눈 나머지가 아래와 같음
 		dp[0][0] = 0;
 		dp[0][1] = 0;
@@ -40,6 +39,4 @@ public class BOJ20500_Ezreal {
 		
 		System.out.println(dp[n-1][0]);
 	}
-	
-
 }
