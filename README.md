@@ -90,7 +90,7 @@
 </details>
 <details>
   <summary>
-4주차: 2022-02-28 ~ 2022-03-06 자율
+4주차: 2022-02-28 ~ 2022-03-06 다익스트라, 구현, 이분 탐색, 그래프, DFS, DP
   </summary>  
   
   [발행 이슈](https://github.com/SSAFY7th-Seoul14/Algorithm-Study-B/issues/28)
@@ -108,7 +108,7 @@
 </details>
 <details>
   <summary>
-5주차: 2022-03-07 ~ 2022-03-13 자율
+5주차: 2022-03-07 ~ 2022-03-13 분할정복, DP, 트리, 구현, 그래프, 백트래킹
   </summary>  
   
   [발행 이슈](https://github.com/SSAFY7th-Seoul14/Algorithm-Study-B/issues/35)
@@ -121,6 +121,39 @@
   |BOJ| [14891 톱니바퀴](https://www.acmicpc.net/problem/14891) | 구현 | G5 |
   |BOJ| [1922 네트워크 연결](https://www.acmicpc.net/problem/1922) | 그래프 | G4 |
   |BOJ| [1038 감소하는 수](https://www.acmicpc.net/problem/10380) | 백트래킹 | G5 |
+  
+</details>
+<details>
+  <summary>
+6주차: 2022-03-14 ~ 2022-03-20 구현, 다익스트라, 그래프
+  </summary>  
+  
+  [발행 이슈](https://github.com/SSAFY7th-Seoul14/Algorithm-Study-B/issues/42)
+
+  | 문제출처 | 문제번호 이름      | 문제유형    | 난이도 |
+  | -------- | ----------------- | ----------- | -------- |
+  |BOJ| [21610 마법사 상어와 비바라기](https://www.acmicpc.net/problem/21610) | 구현 | G5 |
+  |BOJ| [4485 녹색 옷 입은 애가 젤다지?](https://www.acmicpc.net/problem/4485) | 다익스트라 | G4 |
+  |BOJ| [2573 빙산](https://www.acmicpc.net/problem/2573) | 그래프 | G4 |
+  |BOJ| [14719 빗물](https://www.acmicpc.net/problem/14719) | 구현 | G5 |
+  |BOJ| [19238 스타트 택시](https://www.acmicpc.net/problem/19238) | 구현 | G3 |
+  |BOJ| [1261 알고스팟](https://www.acmicpc.net/problem/1261) | 다익스트라 | G4 |
+  
+</details>
+<details>
+  <summary>
+7주차: 2022-03-21 ~ 2022-03-27 트리, 그래프, 이분탐색
+  </summary>  
+  
+  [발행 이슈](https://github.com/SSAFY7th-Seoul14/Algorithm-Study-B/issues/46)
+
+  | 문제출처 | 문제번호 이름      | 문제유형    | 난이도 |
+  | -------- | ----------------- | ----------- | -------- |
+  |BOJ| [5639 이진 검색 트리](https://www.acmicpc.net/problem/5639) | 트리 | G5 |
+  |BOJ| [1941 소문난 칠공주](https://www.acmicpc.net/problem/1941) | 그래프 | G3 |
+  |BOJ| [3020 개똥벌레](https://www.acmicpc.net/problem/3020) | 이분탐색 | G5 |
+  |BOJ| [2512 예산](https://www.acmicpc.net/problem/2512) | 이분 탐색 | S3 |
+  |BOJ| [13397 구간 나누기 2](https://www.acmicpc.net/problem/13397) | 이분탐색 | G4 |
   
 </details>
 <br />
