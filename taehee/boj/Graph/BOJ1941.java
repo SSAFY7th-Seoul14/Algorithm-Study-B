@@ -4,96 +4,78 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
-	static class Count{
-		int x,y,totalCnt, sCnt;
-		ArrayList<int[]> routes;
-		
-		public Count(int x, int y, int totalCnt, int sCnt, ArrayList<int[]> routes) {
-			this.x = x;
-			this.y = y;
-			this.totalCnt = totalCnt;
-			this.sCnt = sCnt;
-			this.routes = routes;
-		}
-	}
-	static char[][] arr = new char[5][5];
-	static boolean[][] visit = new boolean[5][5];
 	
+	static char[][] arr = new char[5][5];
+	static ArrayList<int[]> points = new ArrayList<>();
+	static int[][] select = new int[7][2];
+	static int ans = 0;
+			
     public static void main(String[] args) throws Exception {
     	BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     	for (int i = 0; i < 5; i++) {
 			arr[i] = br.readLine().toCharArray();
-		}
-    	
-    	int cnt = 0;
-    	for (int i = 0; i < 5; i++) {
+			
 			for (int j = 0; j < 5; j++) {
-				cnt += bfs(i,j);
+				points.add(new int[] {i,j});
 			}
 		}
-    	System.out.println(cnt);
+    	
+    	comb(0,0);
+    	System.out.println(ans);
     }
 
-	private static int bfs(int x, int y) {
-		int ans = 0;
-		
+	private static void comb(int cnt, int start) {
+		if(cnt == 7) {
+			int sCnt = 0;
+			//각 조합에 대해서 모두 이어져있는지 판단
+			int[][] list = new int[5][5];
+			//모두 이어넣고
+			for (int i = 0; i < 7; i++) {
+				list[select[i][0]][select[i][1]] = 1;
+			}
+			//다이어져있는지
+			int linked = bfs(list,select[0][0],select[0][1]);
+			//다이어져있으면  S 갯수세기
+			if(linked == 7) {
+				for (int i = 0; i < 7; i++) {
+					if(arr[select[i][0]][select[i][1]] == 'S') sCnt++;
+				}
+				if(sCnt >= 4) ans++;
+			}
+			return;
+		}
+		for (int i = start; i < 25; i++) {
+			select[cnt] = points.get(i);
+			comb(cnt+1, i+1);
+		}
+	}
+
+	private static int bfs(int[][] list, int x, int y) {
 		int[] dx = {1,-1,0,0};
 		int[] dy = {0,0,1,-1};
 		
-		Queue<Count> q = new LinkedList<>();
-		ArrayList<int[]> list = new ArrayList<>();
-		list.add(new int[] {x,y});
+		int cnt = 1;
 		
-		if(arr[x][y] == 'S') q.add(new Count(x,y,1,1,list));
-		else q.add(new Count(x,y,1,0,list));
+		boolean[][] visit = new boolean[5][5];
+		visit[x][y] = true;
+		Queue<int[]> q = new LinkedList<>();
+		q.add(new int[] {x,y});
 		
 		while(!q.isEmpty()) {
-			Count c = q.poll();
-			if(c.totalCnt == 7) {
-				if(c.sCnt >= 4) {//S 4명이상일때만
-					boolean flag = false;
-					for(int[] route : c.routes) {
-						if( !visit[route[0]][route[1]] ) { //하나라도 이거로 7공주 구성한 적 x
-							flag = true; //7공주 구성가능 
-						}
+			int[] p = q.poll();
+			for(int d =0; d<4; d++) {
+				int nx = p[0] + dx[d];
+				int ny = p[1] + dy[d];
+				if(0<= nx && nx < 5 && 0<= ny && ny < 5) {
+					if(!visit[nx][ny] && list[nx][ny] == 1) {
+						visit[nx][ny] = true;
+						q.add(new int[] {nx,ny});
+						cnt++;							
 					}
-					if(flag) {
-						for(int[] route : c.routes) {
-							visit[route[0]][route[1]] = true; // 7공주 구성한 경로 true로
-						}
-						ans++;
-					}					
-				}
-			}
-			
-			for (int i = 0; i < 4; i++) {
-				int nx = c.x + dx[i];
-				int ny = c.y + dy[i];
-				if(0<= nx && nx < 5 && 0<= ny && ny <5 && !inRoutes(nx,ny,c.routes)) {
-					ArrayList<int[]> a = new ArrayList<>();
-					for(int[] l : c.routes) {
-						a.add(l);
-					}
-					a.add(new int[] {nx,ny});
-					
-					if(arr[nx][ny] == 'S') {
-						q.add(new Count(nx,ny,c.totalCnt+1,c.sCnt+1,a));
-					}else {
-						q.add(new Count(nx,ny,c.totalCnt+1,c.sCnt,a));						
-					}
-				}
+				}				
 			}
 		}
-			
-		return ans;
-	}
-
-//	[nx,ny] 가 지나온경로에 있는지
-	private static boolean inRoutes(int nx, int ny, ArrayList<int[]> routes) {
-		for(int[] route : routes) {
-			if(nx==route[0] && ny==route[1]) return true; 
-		}
-		return false;
+		return cnt;
 	}
 
 }
