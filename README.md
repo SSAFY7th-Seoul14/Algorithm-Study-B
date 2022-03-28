@@ -156,6 +156,24 @@
   |BOJ| [13397 구간 나누기 2](https://www.acmicpc.net/problem/13397) | 이분탐색 | G4 |
   
 </details>
+<details>
+  <summary>
+8주차: 2022-03-28 ~ 2022-04-03 누적합, DP, 문자열, 그래프, 이분 탐색, 투 포인터
+  </summary>  
+  
+  [발행 이슈](https://github.com/SSAFY7th-Seoul14/Algorithm-Study-B/issues/56)
+
+  | 문제출처 | 문제번호 이름      | 문제유형    | 난이도 |
+  | -------- | ----------------- | ----------- | -------- |
+  |BOJ| [11660 구간 합 구하기 5](https://www.acmicpc.net/problem/11660) | 누적합 | S1 |
+  |BOJ| [2133 타일 채우기](https://www.acmicpc.net/problem/2133) | DP | G5 |
+  |BOJ| [12904 A와 B](https://www.acmicpc.net/problem/12904) | 문자열 | G5 |
+  |BOJ| [2468 안전 영역](https://www.acmicpc.net/problem/2468) | 그래프 | S1 |
+  |BOJ| [11057 오르막 수](https://www.acmicpc.net/problem/11057) | DP | S1 |
+  |BOJ| [7453 합이 0인 네 정수](https://www.acmicpc.net/problem/7453) | 이분 탐색, 투 포인터 | G2 |
+  |BOJ| [17609 회문](https://www.acmicpc.net/problem/17609) | 문자열 | S1 |
+  
+</details>
 <br />
 
 ---
