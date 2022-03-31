@@ -10,51 +10,16 @@ public class Main {
     	String s = br.readLine();
     	String t = br.readLine();
     	
-    	int sa = 0;
-    	int sb = 0;
-    	int ta = 0;
-    	int tb = 0;
-    	for (int i = 0; i < s.length(); i++) {
-			if(s.charAt(i) == 'A') sa++;
-			else sb++;
-		}
-    	for (int i = 0; i < t.length(); i++) {
-    		if(t.charAt(i) == 'A') ta++;
-    		else tb++;
-    	}
     	int ans = 0;
-    	while(true) {
+    	while(s.length() < t.length()) {
     		if(t.charAt(t.length()-1) == 'A') {
-    			if(sa != ta) {
-    				t = one(t);
-    				ta--;
-    			}
-    			else {
-    				t = two(t);
-    				tb--;
-    			}
+    			t = one(t);
     		}else {
-    			if(sb != tb) {
-    				t = two(t);
-    				tb--;
-    			}
-    			else {
-    				t = one(t);    			
-    				ta--;
-    			}
-    		}
-    		
-    		if(s.equals(t)) {
-    			ans = 1;
-    			break;
-    		}
-    		if(ta < sa || tb < sb) {
-    			ans = 0;
-    			break;
+    			t = two(t);
     		}
     	}
-    	
-    	System.out.println(ans);
+    	if(s.equals(t)) System.out.println(1);
+    	else System.out.println(0);
     }
     private static String one(String str) {
     	return str.substring(0, str.length()-1);
