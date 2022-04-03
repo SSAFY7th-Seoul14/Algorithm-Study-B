@@ -1,27 +1,18 @@
-package com.ssafy.study;
-
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.util.StringTokenizer;
-
-// BOJ / ì•ˆì „ ì˜ì—­ / S1 / 20ë¶„
+import java.io.*;
+import java.util.*;
+//BOJ / ¾ÈÀü¿µ¿ª / S1 / 15ºĞ
 //https://www.acmicpc.net/problem/2468
 public class Main_2468 {
-	
 	static int N;
-	static int map[][]; //map:ë†’ì´ ì…ë ¥
-	static boolean visited[][]; //ë°©ë¬¸ì—¬ë¶€
-	static int R; //ê°•ìˆ˜ëŸ‰
+	static int map[][];
+	static int res;
+	static boolean visited[][];
 	static int dx[] = {-1,1,0,0};
 	static int dy[] = {0,0,-1,1};
-	static int res; //ì•ˆì „ì˜ì—­ ìµœëŒ€ ê°œìˆ˜(ì •ë‹µ)
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		
 		N = Integer.parseInt(br.readLine());
-		
 		map = new int[N][N];
-		
 		for(int i=0;i<N;i++) {
 			StringTokenizer st = new StringTokenizer(br.readLine());
 			for(int j=0;j<N;j++) {
@@ -29,36 +20,30 @@ public class Main_2468 {
 			}
 		}
 		
-		for(int t=0;t<=100;t++) { //ê°•ìˆ˜ëŸ‰ 0ë¶€í„° 100ê¹Œì§€ ì•ˆì „ ì˜ì—­ ì¡°ì‚¬
-			R = t; //ê°•ìˆ˜ëŸ‰
-			visited = new boolean[N][N]; //ë°©ë¬¸ ë°°ì—´ ì´ˆê¸°í™”
-			int cnt=0; // ì•ˆì „ì˜ì—­ ê°œìˆ˜
+		for(int h=0;h<=100;h++) { //°­¼ö·®ÀÌ 0~100ÀÏ¶§±îÁöÀÇ ¾ÈÀüÁö´ë °³¼ö ±¸ÇÏ±â
+			int cnt=0;
+			visited = new boolean[N][N];
 			for(int i=0;i<N;i++) {
 				for(int j=0;j<N;j++) {
-					if(map[i][j]>R && !visited[i][j]) {
-						dfs(i,j);
+					if(!visited[i][j] && map[i][j]>h) {
+						dfs(i,j,h);
 						cnt++;
 					}
-						
 				}
 			}
-			res = Math.max(res, cnt); //ì •ë‹µ ê°±ì‹ 
+			res = Math.max(res,cnt);
 		}
 		System.out.println(res);
-		
 	}
-	private static void dfs(int x, int y) {
-		
-		visited[x][y]=true;
+	private static void dfs(int x, int y, int h) {
+		visited[x][y] = true;
 		for(int i=0;i<4;i++) {
 			int nx = x + dx[i];
 			int ny = y + dy[i];
-			if(nx>=0 && nx<N && ny>=0 && ny<N) {
-				if(map[nx][ny]>R && !visited[nx][ny]) {
-					dfs(nx,ny);
-				}
-			}
+			if(nx<0 || nx>=N || ny<0 || ny>=N || visited[nx][ny]) continue;
+			if(map[nx][ny]>h)
+				dfs(nx,ny,h);
 		}
+		
 	}
-
 }
