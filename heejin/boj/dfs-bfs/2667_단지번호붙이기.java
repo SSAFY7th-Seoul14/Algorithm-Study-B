@@ -1,76 +1,59 @@
-package com.ssafy.study;
+import java.io.*;
+import java.util.*;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-
-// BOJ / ë‹¨ì§€ë²ˆí˜¸ë¶™ì´ê¸° / S1 / 30ë¶„
+// BOJ / ´ÜÁö¹øÈ£ ºÙÀÌ±â / S1 / 10ºĞ
 // https://www.acmicpc.net/problem/2667
 public class Main_2667 {
-
 	static int N;
-	static int[][] map;
-	static int[] dx = {-1,1,0,0};
-	static int[] dy = {0,0,-1,1};
-	static int townNum; //ë‹¨ì§€ ìˆ˜
-	static int cnt; // ë‹¨ì§€ì˜ ë§ˆì„ ìˆ˜
-	static List<Integer> cntList = new ArrayList<>();
-	static boolean[][] visited;
-	
-	
+	static int map[][];
+	static int dx[] = {-1,1,0,0};
+	static int dy[] = {0,0,-1,1};
+	static boolean visited[][];
+	static int house; //´ÜÁö ³» Áı ¼ö
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		N = Integer.parseInt(br.readLine());
+		
 		map = new int[N][N];
 		visited = new boolean[N][N];
-		
 		for(int i=0;i<N;i++) {
 			String input = br.readLine();
 			for(int j=0;j<N;j++) {
-				map[i][j] = input.charAt(j)-'0';				
+				map[i][j] = input.charAt(j)-'0';
 			}
 		}
 		
+		int cnt=0; //´ÜÁö¼ö
+		List<Integer> list = new ArrayList<Integer>(); //´ÜÁö ³»ÀÇ Áı ¼ö ÀúÀå
 		for(int i=0;i<N;i++) {
 			for(int j=0;j<N;j++) {
-				if(map[i][j]==1 && !visited[i][j]) {
-					cnt=1;
+				if(!visited[i][j] && map[i][j]==1) {
+					house=0;
 					dfs(i,j);
-					townNum++;
-					cntList.add(cnt);
-				}
-					
-			}
-		}
-		System.out.println(townNum);
-		Collections.sort(cntList);
-		for(int i: cntList)
-			System.out.println(i);
-		
-		
-	}
-
-	private static void dfs(int x, int y) {
-		visited[x][y]=true;
-		
-		for(int i=0;i<4;i++) {
-			int nx = x+ dx[i];
-			int ny = y + dy[i];
-			if(nx>=0 && nx<N && ny>=0 && ny<N) {
-				if(isAvailable(nx,ny)) {
-					dfs(nx,ny);
+					list.add(house);
 					cnt++;
 				}
 			}
 		}
+		System.out.println(cnt);
+		Collections.sort(list);
+		for(int li : list) {
+			System.out.println(li);
+		}
+		
+		
 	}
-
-	private static boolean isAvailable(int x, int y) {
-		if(map[x][y]==1 && !visited[x][y]) return true;
-		return false;
+	private static void dfs(int x, int y) {
+		visited[x][y] = true;
+		house++;
+		for(int i=0;i<4;i++) {
+			int nx = x + dx[i];
+			int ny = y+ dy[i];
+			if(nx<0 || nx>=N || ny<0 || ny>=N || visited[nx][ny]) continue;
+			if(map[nx][ny]==1)
+				dfs(nx,ny);
+		}
+		
 	}
-	
 	
 }
