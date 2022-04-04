@@ -174,6 +174,24 @@
   |BOJ| [17609 회문](https://www.acmicpc.net/problem/17609) | 문자열 | S1 |
   
 </details>
+<details>
+  <summary>
+9주차: 2022-04-04 ~ 2022-04-10 DP, 이분탐색, 다익스트라, 구현
+  </summary>  
+  
+  [발행 이슈](https://github.com/SSAFY7th-Seoul14/Algorithm-Study-B/issues/63)
+
+  | 문제출처 | 문제번호 이름      | 문제유형    | 난이도 |
+  | -------- | ----------------- | ----------- | -------- |
+  |BOJ| [6087 레이저 통신](https://www.acmicpc.net/problem/6087) | 다익스트라 | G3 |
+  |BOJ| [15919 사자는 여행왕이야!](https://www.acmicpc.net/problem/15919) | DP | G3 |
+  |BOJ| [20056 마법사 상어와 파이어볼](https://www.acmicpc.net/problem/20056) | 구현 | G4 |
+  |BOJ| [2294 동전2](https://www.acmicpc.net/problem/2294) | DP | S1 |
+  |BOJ| [1300 K번째 수](https://www.acmicpc.net/problem/1300) | 이분탐색 | G2 |
+  |BOJ| [2352 반도체 설계](https://www.acmicpc.net/problem/2352) | DP | G2 |
+  
+  
+</details>
 <br />
 
 ---
