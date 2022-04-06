@@ -1,60 +1,46 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
+import java.util.Stack;
 import java.util.StringTokenizer;
 
 // 백준 14002번. 가장 긴 증가하는 부분 수열 4
 public class BOJ14002_LIS4 {
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		int n = Integer.parseInt(br.readLine());
-		int[] data = new int[n];
-
-		StringTokenizer st = new StringTokenizer(br.readLine());
-		for (int i = 0; i < n; i++) {
+    	int n = Integer.parseInt(br.readLine());
+    	int[] data = new int[n];
+    	
+    	StringTokenizer st = new StringTokenizer(br.readLine());
+    	for (int i = 0; i < n; i++) {
 			data[i] = Integer.parseInt(st.nextToken());
 		}
-		
-		// LIS 계산
-		ArrayList<ArrayList<Integer>> lis = new ArrayList<>();
-		int maxSize = 0;
-		int maxIdx = 0;
-		for (int i = 0; i < n; i++) {
-			// pmax, pmaxIdx = 이전(i-1)까지의 가장 긴 수열 길이, 해당 index
-			int pmax = 1;
-			int pmaxIdx = i;
-			ArrayList<Integer> cur = new ArrayList<>();
-			for (int j = 0; j < i; j++) {
-				// 증가하는 수열이면서, 값이 더 커지는 경우 갱신한다.
-				if (data[j] < data[i] && pmax < lis.get(j).size() + 1) {
-					pmax = lis.get(j).size() + 1;
-					pmaxIdx = j;
-				}
+    	
+    	// 계산
+    	int[] lis = new int[n];
+    	int size = Integer.MIN_VALUE;
+    	for (int i = 0; i < n; i++) {
+    		lis[i] = 1;
+    		for (int j = 0; j < i; j++) {
+				if (data[j] < data[i] && lis[j]+1 > lis[i])
+					lis[i] = lis[j]+1;
 			}
-			
-			// lis가 1이 아니라면, 해당 인덱스를 복사해서 현재 cur에 넣어준다.
-			if (pmaxIdx != i) {
-				ArrayList<Integer> maxList = lis.get(pmaxIdx);
-				for (int num : maxList) {
-					cur.add(num);
-				}
-			}
-			
-			// 현재 값을 맨 뒤에 넣는다.
-			cur.add(data[i]);
-			lis.add(cur);
-			
-			// max값 크기, index 갱신
-			if (maxSize < cur.size()) {
-				maxSize = cur.size();
-				maxIdx = i;
+    		size = Math.max(size, lis[i]);
+		}
+    	System.out.println(size);
+    	
+    	// 경로 출력
+    	Stack<Integer> s = new Stack<>();
+		for (int i = n-1; i >= 0; i--) {
+			if (size == lis[i]) { // 경로의 lis 길이
+				s.push(data[i]); // 경로의 수열 값
+				size--;
 			}
 		}
 		
-		// 출력
-		System.out.println(maxSize);
-		for (int num : lis.get(maxIdx)) {
-			System.out.print(num + " ");
+		StringBuilder sb = new StringBuilder();
+		while (!s.isEmpty()) {
+			sb.append(s.pop() + " ");
 		}
-	}
+		System.out.println(sb);
+    }
 }
