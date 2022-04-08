@@ -1,6 +1,7 @@
 import java.io.*;
 import java.util.*;
 
+
 class pair implements Comparable<pair>{
 	int x,y;
 	pair (int x, int y)
