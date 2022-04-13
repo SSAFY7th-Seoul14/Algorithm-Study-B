@@ -1,9 +1,9 @@
-package algo_0413;
+package com;
 
 import java.io.*;
 import java.util.*;
 
-public class BOJ17143 {
+public class Main {
 	static class Shark{
 		int r,c,s,d,z;
 
@@ -63,7 +63,10 @@ public class BOJ17143 {
 		Shark[][] next = new Shark[r+1][c+1];
 		for(int i=0; i<sList.size(); i++) { //상어별로
 			Shark s = sList.get(i);
-			for(int j=0; j<s.s; j++) { //상어속력만큼 이동 
+			int speed = s.s;
+			if(s.d==1||s.d==2) speed %= ((r-1)*2);
+			else speed %= ((c-1)*2);
+			for(int j=0; j<speed; j++) { //상어속력만큼 이동, 한칸씩움직이면 시간초과
 				//경계면 방향전환
 				if(s.d == 1 && s.r == 1) s.d=2;
 				else if(s.d == 2 && s.r == r) s.d=1;
