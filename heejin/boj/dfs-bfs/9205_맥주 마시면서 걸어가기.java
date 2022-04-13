@@ -1,76 +1,75 @@
-package com.ssafy.study;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
-import java.util.StringTokenizer;
+import java.io.*;
+import java.util.*;
 
-// BOJ / ë§¥ì£¼ ë§ˆì‹œë©´ì„œ ê±¸ì–´ê°€ê¸° / S1 / 75ë¶„ 
+// BOJ / ¸ÆÁÖ ¸¶½Ã¸é¼­ °É¾î°¡±â / S1 / 30ºĞ..+
 // https://www.acmicpc.net/problem/9205
-public class Main_9205{
-	static int start_x, start_y, end_x, end_y, N;
-	static List<int[]> list;
+public class Main_9205 {
+	static class Conv {
+		int num;
+		int x;
+		int y;
+
+		public Conv(int num, int x, int y) {
+			this.num = num;
+			this.x = x;
+			this.y = y;
+		}
+	}
+
+	static int N, sx, sy, ex, ey;
+	static List<Conv> list;
 	static boolean visited[];
-	
-	public static void main(String[] args) throws Exception{
+
+	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		
 		int T = Integer.parseInt(br.readLine());
-		for(int t=1;t<=T;t++) {
-			N = Integer.parseInt(br.readLine()); //í¸ì˜ì  ê°œìˆ˜
-			
-			StringTokenizer st = new StringTokenizer(br.readLine()); //ìƒê·¼ì´ ì§‘ ì¢Œí‘œ
-			start_x = Integer.parseInt(st.nextToken());
-			start_y = Integer.parseInt(st.nextToken());
-			
-			list = new ArrayList<>(); //í¸ì˜ì  ë¦¬ìŠ¤íŠ¸ ì €ì¥
-			for(int i=0;i<N;i++) { // Nê°œì˜ í¸ì˜ì  ì…ë ¥ë°›ê¸°
+		for (int t = 1; t <= T; t++) {
+			N = Integer.parseInt(br.readLine()); // ÆíÀÇÁ¡ °³¼ö
+			visited = new boolean[N];
+			list = new ArrayList<>();
+			StringTokenizer st = new StringTokenizer(br.readLine());
+			sx = Integer.parseInt(st.nextToken());
+			sy = Integer.parseInt(st.nextToken());
+			for (int i = 0; i < N; i++) {
 				st = new StringTokenizer(br.readLine());
 				int x = Integer.parseInt(st.nextToken());
 				int y = Integer.parseInt(st.nextToken());
-				list.add(new int[] {x,y});
+				list.add(new Conv(i, x, y));
 			}
-			st = new StringTokenizer(br.readLine()); //ë½ í˜ìŠ¤í‹°ë²Œ ì¢Œí‘œ
-			end_x = Integer.parseInt(st.nextToken());
-			end_y = Integer.parseInt(st.nextToken());
-
-			visited = new boolean[N];
+			st = new StringTokenizer(br.readLine());
+			ex = Integer.parseInt(st.nextToken());
+			ey = Integer.parseInt(st.nextToken());
 			
-			bfs(start_x,start_y);
-			
+			if (bfs(sx, sy)) {
+				System.out.println("happy");
+			} else {
+				System.out.println("sad");
+			}
 		}
 	}
 
-	private static void bfs(int x, int y) {
+	private static boolean bfs(int sx, int sy) {
+		Queue<Conv> q = new LinkedList<>();
+		q.offer(new Conv(-1, sx, sy)); // ½ÃÀÛÁ¡
 		
-		Queue<int[]> q = new LinkedList<>();
-		q.offer(new int[] {x,y});
-		
-		int con_x, con_y, cur_x, cur_y; //í¸ì˜ì  x,yì¢Œí‘œ/í˜„ì¬ x,yì¢Œí‘œ
 		while(!q.isEmpty()) {
-			int[] cur = q.poll();
-			cur_x = cur[0];
-			cur_y = cur[1];
-			if(Math.abs(cur_x-end_x)+Math.abs(cur_y-end_y)<=1000) {
-				System.out.println("happy");
-				return;
+			Conv cur = q.poll();
+			//ÇöÀç À§Ä¡¿¡¼­ µµÂøÁö±îÁö °¡´É?
+			if(Math.abs(cur.x-ex)+Math.abs(cur.y-ey)<=1000) {
+				return true;
 			}
-			//í˜„ì¬ ìœ„ì¹˜ì—ì„œ 1000m ì•ˆì— ìˆëŠ” í¸ì˜ì  íì— ë„£ê¸°
 			for(int i=0;i<N;i++) {
-				con_x = list.get(i)[0];
-				con_y = list.get(i)[1];
-
-				if(!visited[i] && Math.abs(con_x-cur_x)+Math.abs(con_y-cur_y)<=1000) {
-
-					q.offer(new int[] {con_x,con_y});
-					visited[i]=true;
+				Conv next = list.get(i);
+				if(!visited[next.num] && 
+						Math.abs(next.x-cur.x)+Math.abs(next.y-cur.y)<=1000) {
+					q.offer(next);
+					visited[next.num]=true;
 				}
 			}
 		}
-		System.out.println("sad");
-		
+		return false;
 	}
+
+
 }
