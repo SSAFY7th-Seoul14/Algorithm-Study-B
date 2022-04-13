@@ -192,6 +192,24 @@
   
   
 </details>
+<details>
+  <summary>
+10주차: 2022-04-11 ~ 2022-04-17 그리디, 백트래킹, 다익스트라, 플로이드 와샬, 구현, 분할정복  
+  </summary>  
+  
+  [발행 이슈](https://github.com/SSAFY7th-Seoul14/Algorithm-Study-B/issues/68)
+
+  | 문제출처 | 문제번호 이름      | 문제유형    | 난이도 |
+  | -------- | ----------------- | ----------- | -------- |
+  |BOJ| [1080 행렬](https://www.acmicpc.net/problem/1080) | 그리디 | S1 |  
+  |BOJ| [16197 두 동전](https://www.acmicpc.net/problem/16197) | 백트래킹 | G4 |  
+  |BOJ| [11779 최소비용 구하기 2](https://www.acmicpc.net/problem/11779) | 다익스트라 | G3 |  
+  |BOJ| [21278 호석이 두 마리 치킨](https://www.acmicpc.net/problem/21278) | 플로이드 와샬 | G5 |  
+  |BOJ| [20058 마법사 상어와 파이어스톰](https://www.acmicpc.net/problem/20058) | 구현 | G4 |  
+  |BOJ| [5904 Moo 게임](https://www.acmicpc.net/problem/5904) | 분할정복| S1 |  
+  
+  
+</details>
 <br />
 
 ---
