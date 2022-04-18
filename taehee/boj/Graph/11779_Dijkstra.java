@@ -21,12 +21,18 @@ public class Main {
 		int n = Integer.parseInt(br.readLine());
 		int m = Integer.parseInt(br.readLine());
 		int[][] arr = new int[n+1][n+1];
+		for(int i=0; i<n+1; i++) {
+			for(int j=0; j<n+1; j++) {
+				arr[i][j] = -1;
+			}
+		}
+		
 		for (int i = 0; i < m; i++) {
 			st = new StringTokenizer(br.readLine());
 			int from = Integer.parseInt(st.nextToken());
 			int to = Integer.parseInt(st.nextToken());
 			int cost = Integer.parseInt(st.nextToken());
-			if(arr[from][to]!=0) arr[from][to] = Math.min(arr[from][to], cost);
+			if(arr[from][to]!=-1) arr[from][to] = Math.min(arr[from][to], cost);
 			else arr[from][to] = cost;
 		}
 		st = new StringTokenizer(br.readLine());
@@ -50,7 +56,7 @@ public class Main {
 			}
 			visit[cur] = true;
 			for (int j = 1; j < n+1; j++) {
-				if(!visit[j] && arr[cur][j] != 0 
+				if(!visit[j] && arr[cur][j] != -1
 						&& dp[j].cost > dp[cur].cost + arr[cur][j]) {
 					int tmp = dp[cur].cost + arr[cur][j];
 					dp[j] = new Node(dp[cur],j,tmp);
