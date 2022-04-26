@@ -206,8 +206,43 @@
   |BOJ| [11779 최소비용 구하기 2](https://www.acmicpc.net/problem/11779) | 다익스트라 | G3 |  
   |BOJ| [21278 호석이 두 마리 치킨](https://www.acmicpc.net/problem/21278) | 플로이드 와샬 | G5 |  
   |BOJ| [20058 마법사 상어와 파이어스톰](https://www.acmicpc.net/problem/20058) | 구현 | G4 |  
-  |BOJ| [5904 Moo 게임](https://www.acmicpc.net/problem/5904) | 분할정복| S1 |  
+  |BOJ| [5904 Moo 게임](https://www.acmicpc.net/problem/5904) | 분할정복 | S1 |  
   
+</details>
+<details>
+  <summary>
+11주차: 2022-04-18 ~ 2022-04-24 백트래킹, 비트마스킹, 그리디, 최소공통조상, 구현, 문자열  
+  </summary>  
+  
+  [발행 이슈](https://github.com/SSAFY7th-Seoul14/Algorithm-Study-B/issues/76)
+
+  | 문제출처 | 문제번호 이름      | 문제유형    | 난이도 |
+  | -------- | ----------------- | ----------- | -------- |
+  |BOJ| [11437 LCA](https://www.acmicpc.net/problem/11437) | 최소 공통 조상 | G3 |
+  |BOJ| [4991 로봇 청소기](https://www.acmicpc.net/problem/4991) | 비트마스킹 | G2 |
+  |BOJ| [1946 신입 사원](https://www.acmicpc.net/problem/1946) | 그리디 | S1
+  |BOJ| [1991 마법사 상어와 토네이도](https://www.acmicpc.net/problem/20057) | 구현 | G3 |
+  |BOJ| [15684 사다리 조작](https://www.acmicpc.net/problem/15684) | 백트래킹 | G4 |
+  |BOJ| [5582 공통 부분 문자열](https://www.acmicpc.net/problem/5582) | 문자열 | G5 |
+  |PGS| [주차 요금 계산](https://programmers.co.kr/learn/courses/30/lessons/92341) | 문자열 | lv.2 |  
+  |PGS| [양궁 대회](https://programmers.co.kr/learn/courses/30/lessons/92342) | DFS | lv.2 |  
+  
+</details>
+<details>
+  <summary>
+12주차: 2022-04-25 ~ 2022-05-01 백트래킹, DP, 문자열, 트리 
+  </summary>  
+  
+  [발행 이슈](https://github.com/SSAFY7th-Seoul14/Algorithm-Study-B/issues/82)
+
+  | 문제출처 | 문제번호 이름      | 문제유형    | 난이도 |
+  | -------- | ----------------- | ----------- | -------- |
+  |BOJ| [1062 가르침](https://www.acmicpc.net/problem/1062) | 백트래킹 | G4 |
+  |BOJ| [2250 트리의 높이와 너비](https://www.acmicpc.net/problem/2250) | 트리 | G2 |
+  |BOJ| [2096 내려가기](https://www.acmicpc.net/problem/2096) | DP | G4 |
+  |BOJ| [9935 문자열 폭발](https://www.acmicpc.net/problem/9935) | 문자열 | G4 |
+  |PGS| [k진수에서 소수 개수 구하기](https://programmers.co.kr/learn/courses/30/lessons/92335) | 수학 | lv.2 |
+  |BOJ| [19542 전단지 돌리기](https://www.acmicpc.net/problem/19542) | DFS | G4 |
   
 </details>
 <br />
