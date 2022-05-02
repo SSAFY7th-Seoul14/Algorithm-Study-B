@@ -50,14 +50,15 @@ public class BOJ1062_가르침 {
 		
 		list = new ArrayList<>(set);
 		
-		combination(0, 0);//조합
+		int pickCnt = Math.min(K-5, list.size());
+		combination(0, 0, pickCnt);//조합
 		
 		System.out.println(max);
 		
 	}
 	
-	public static void combination(int cnt, int start) {
-		if(cnt == K-5) {
+	public static void combination(int cnt, int start, int pickCnt) {
+		if(cnt == pickCnt) {
 			wordCheck();
 			return;
 		}
@@ -65,7 +66,7 @@ public class BOJ1062_가르침 {
 		for(int i=start; i < list.size(); i++) {
 			if(isSelected[list.get(i)-'a']) continue;
 			isSelected[list.get(i)-'a'] = true;
-			combination(cnt+1, i+1);
+			combination(cnt+1, i+1, pickCnt);
 			isSelected[list.get(i)-'a'] = false;
 		}
 	}
