@@ -245,6 +245,22 @@
   |BOJ| [19542 전단지 돌리기](https://www.acmicpc.net/problem/19542) | DFS | G4 |
   
 </details>
+<details>
+  <summary>
+13주차: 2022-05-02 ~ 2022-05-08 비트마스킹, DP, 그래프, 그리디, MST, 정렬, 트리 
+  </summary>  
+  
+  [발행 이슈](https://github.com/SSAFY7th-Seoul14/Algorithm-Study-B/issues/89)
+
+  | 문제출처 | 문제번호 이름      | 문제유형    | 난이도 |
+  | -------- | ----------------- | ----------- | -------- |
+  |BOJ| [2533 사회망 서비스(SNS)](https://www.acmicpc.net/problem/2533) | 트리, DP | G3 |
+  |BOJ| [11000 강의실 배정](https://www.acmicpc.net/problem/11000) | 그리디, 정렬 | G5 |
+  |BOJ| [12784 인하니카 공화국](https://www.acmicpc.net/problem/12784) | DP, 그래프 | G3 |
+  |BOJ| [2001 보석 줍기](https://www.acmicpc.net/problem/2001) | 비트마스킹 | G1 |
+  |BOJ| [4386 별자리 만들기](https://www.acmicpc.net/problem/4386) | MST | G4 |
+
+</details>
 <br />
 
 ---
