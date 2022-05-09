@@ -261,6 +261,23 @@
   |BOJ| [4386 별자리 만들기](https://www.acmicpc.net/problem/4386) | MST | G4 |
 
 </details>
+<details>
+  <summary>
+14주차: 2022-05-09 ~ 2022-05-15 이분탐색, 그래프, 문자열, 트리, 투 포인터  
+  </summary>  
+  
+  [발행 이슈](https://github.com/SSAFY7th-Seoul14/Algorithm-Study-B/issues/96)
+
+  | 문제출처 | 문제번호 이름      | 문제유형    | 난이도 |
+  | -------- | ----------------- | ----------- | -------- |
+  |BOJ| [1167 트리의 지름](https://www.acmicpc.net/problem/1167) | 트리 | G3 |
+  |BOJ| [1162 도로포장](https://www.acmicpc.net/problem/1162) | 그래프 | G1 |
+  |BOJ| [2473 세 용액](https://www.acmicpc.net/problem/2473) | 투포인터 | G4 |
+  |BOJ| [3055 탈출](https://www.acmicpc.net/problem/3055) | 그래프 | G4 |
+  |BOJ| [2470 두 용액](https://www.acmicpc.net/problem/2470) | 이분탐색 | G5 |
+  |BOJ| [1213 팰린드롬 만들기](https://www.acmicpc.net/problem/1213) | 문자열 | S3 |
+
+</details>
 <br />
 
 ---
