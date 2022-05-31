@@ -278,6 +278,22 @@
   |BOJ| [1213 팰린드롬 만들기](https://www.acmicpc.net/problem/1213) | 문자열 | S3 |
 
 </details>
+<details>
+  <summary>
+15주차: 2022-05-16 ~ 2022-05-22 그리디, 문자열, 구현, 그래프, DP  
+  </summary>  
+  
+  [발행 이슈](https://github.com/SSAFY7th-Seoul14/Algorithm-Study-B/issues/99)
+
+  | 문제출처 | 문제번호 이름      | 문제유형    | 난이도 |
+  | -------- | ----------------- | ----------- | -------- |
+  |BOJ| [13904 과제](https://www.acmicpc.net/problem/13904) | 그리디 | G3 |
+  |BOJ| [12919 A와 B](https://www.acmicpc.net/problem/12919) | 문자열 | G5 |
+  |BOJ| [19236 청소년 상어](https://www.acmicpc.net/problem/19236) | 구현 | G2 |
+  |BOJ| [17182 우주 탐사선](https://www.acmicpc.net/problem/17182) | 그래프 | G3 |
+  |BOJ| [10942 팰린드롬?](https://www.acmicpc.net/problem/10942) | DP | G3 |
+
+</details>
 <br />
 
 ---
